@@ -106,6 +106,20 @@
 	.ips
 		padding-top: 46px
 		padding-bottom: 80px
+		&.--pt
+			padding-top: 80px
+		&.--map-md
+			.ips
+				&__text
+					margin-bottom: 64px
+					p
+						margin-bottom: 27px
+		&__icon
+			width: 320px
+			height: 320px
+			margin-bottom: 40px
+			svg
+				width: 200px
 		&__town
 			max-width: 460px
 			margin: 0 auto -33px
@@ -113,6 +127,8 @@
 			padding: 56px 10px 56px 98px
 		&__item
 			width: calc(50% - 20px)
+		&__imgs
+			display: none
 
 @media (max-width: 767px)
 	.ips
