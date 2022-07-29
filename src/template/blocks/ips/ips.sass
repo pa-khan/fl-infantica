@@ -1,6 +1,24 @@
 .ips
 	position: relative
 	padding-bottom: 100px
+	overflow: hidden
+	&.--pt
+		padding-top: 100px
+	&.--map-md
+		.ips
+			&__img
+				&:nth-of-type(1)
+					max-width: 525px
+					top: 100px
+					right: calc(50% - var(--container-width) / 2 - 300px)
+				&:nth-of-type(2)
+					max-width: 495px
+					top: 550px
+					left: calc(50% - var(--container-width) / 2 - 380px)
+	&.--tal
+		.ips
+			&__text
+				text-align: left
 	&__img
 		position: absolute
 		max-width: 320px
@@ -10,9 +28,18 @@
 		&:nth-of-type(2)
 			top: 915px
 			left: calc(50% - var(--container-width) / 2 - 330px)
-	&__town
+	&__town, &__icon
 		display: flex
+		align-items: center
 		justify-content: center
+	&__icon
+		width: 400px
+		height: 400px
+		background: #F8FDFB
+		border-radius: 50%
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 48px
 	&__title
 		text-align: center
 		margin-bottom: 20px
@@ -22,6 +49,26 @@
 		margin-left: auto
 		margin-right: auto
 		margin-bottom: 40px
+		ul
+			margin-bottom: 40px
+			flex-direction: column
+		li
+			padding-left: 23px
+			position: relative
+			font-weight: 600
+			margin-bottom: 5px
+			&:last-child
+				margin-bottom: 0
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 5px
+				width: 6px
+				height: 6px
+				border-radius: 50%
+				transform: translateY(-50%)
+				background: var(--color-black04)
 	&__wrap
 		padding: 60px 58px
 		background: #F6F7F8
