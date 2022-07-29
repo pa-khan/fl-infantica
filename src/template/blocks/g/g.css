@@ -138,6 +138,10 @@
   .g__list {
     grid-template-columns: repeat(2, 1fr);
   }
+  .g__list.--w5 {
+    padding: 50px 110px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 580px) {
   .g {

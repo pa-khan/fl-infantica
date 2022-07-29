@@ -1,6 +1,6 @@
-mixin breadcrumbs()
+mixin breadcrumbs(cls)
 	if (breadcrumbs)
-		.page__breadcrumbs.breadcrumbs
+		.breadcrumbs(class=cls)
 			.breadcrumbs__list(itemscope itemtype="http://schema.org/BreadcrumbList")
 				- var position = 1
 				each item in breadcrumbs

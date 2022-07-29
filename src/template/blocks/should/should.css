@@ -1,34 +1,60 @@
-:root {
-  /* Color */
-  --color-white: #ffffff;
-  --color-dark: #000000;
-  --color-primary: #8D21EF;
-  --color-primary-blue: #434396;
-  --color-green03: #34CCA9;
-  --color-black04: #1C1C20;
-  --color-gray05: #7D7D82;
-  --color-silver06: #DDDDE8;
-  --color-hover: #3d209f;
-  --color-hover-green: #17aa8c;
-  --color-red: #CF2F2F;
-  --color-secondary: #218AEF;
-  --color-neutral-100: #05172E;
-  --color-gray50: #F2F2F2;
-  --color-gray100: #E5E5E5;
-  --color-gray200: #CCCCCC;
-  --color-gray400: #999999;
-  --color-gray500: #808080;
-  /* Font */
-  --font-Metropolis: "Metropolis", sans-serif;
-  /* Container */
-  --container-width: 1170px;
-  /* Others */
-  --modal-height: 90vh;
-  --main-header-height: 79px;
-  --border-rd-small: 4px;
-  --border-rd-medium: 8px;
-  --border-rd-large: 16px;
-  /* Z-index variables */
-  --zIndex-overlay: 50;
-  --zIndex-modal: 125;
+.should {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.should__cloud {
+  position: absolute;
+}
+.should__cloud:nth-of-type(1) {
+  top: 120px;
+  left: calc(50% - var(--container-width) / 2 + 400px);
+}
+.should__cloud:nth-of-type(2) {
+  top: 222px;
+  right: calc(50% - var(--container-width) / 2 + 420px);
+}
+.should__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.should__icon svg {
+  margin-left: 60px;
+}
+.should__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.should__wrap {
+  background: #F6F7F8;
+  border: 3px solid #000000;
+  box-shadow: 12px 12px 0px #000000;
+  border-radius: 6px;
+  padding: 60px;
+}
+.should__list {
+  display: grid;
+  gap: 80px 95px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.should__item-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.should__item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #434396;
+  border: 5px solid #1C1C20;
+}
+.should__item-title {
+  width: calc(100% - 120px);
+  padding-left: 24px;
 }
