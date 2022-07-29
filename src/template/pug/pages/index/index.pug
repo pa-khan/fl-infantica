@@ -1,10 +1,39 @@
 extends ../../templates/default
 block vars
 	-
-		title = "Главная страница"
+		title = "Home - Infatica"
 		breadcrumbs = [
 			['Главная', 'index.html'],
 			[title]
 		]
 block content
-	
+	include ../../../blocks/services/services
+	+style('services', 'blocks')
+
+	include ../../../blocks/high-speed/high-speed
+	+style('high-speed', 'blocks')
+
+	include ../../../blocks/industrial/industrial
+	+style('industrial', 'blocks')
+
+	include ../../../blocks/advantage/advantage
+	+style('advantage', 'blocks')
+
+	include ../../../blocks/premium/premium
+	+style('premium', 'blocks')
+
+	include ../../../blocks/reviews/reviews
+	+style('reviews', 'blocks')
+	+script('reviews', 'blocks')
+
+	include ../../../blocks/price-plan/price-plan
+	+style('price-plan', 'blocks')
+
+	include ../../../blocks/questions/questions
+	+style('questions', 'blocks')
+
+	include ../../../blocks/feedback/feedback
+	+style('feedback', 'blocks')
+
+	include ../../../blocks/free-trial/free-trial
+	+style('free-trial', 'blocks')

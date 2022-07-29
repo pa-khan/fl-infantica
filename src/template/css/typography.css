@@ -1,11 +1,40 @@
-.tal {
-  text-align-last: left;
+.h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
 }
 
-.tac {
-  text-align: center;
+.h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
 }
 
-.tar {
-  text-align: right;
+.h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.t1 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.t2 {
+  font-size: 16px;
+  line-height: 27px;
+  text-align: justify;
+}
+.t2 p {
+  margin-bottom: 40px;
+}
+.t2 p:last-child {
+  margin-bottom: 0;
 }

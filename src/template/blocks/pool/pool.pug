@@ -1,0 +1,16 @@
+include ../../pug/vars
+
+if pool
+	.pool.case
+		+breadcrumbs('.pool__breadcrumbs')
+		.pool__wrap
+			.pool__content
+				.pool__title= pool.title
+				.pool__text= pool.text
+				.pool__links
+					ul
+						each item in pool.links
+							li
+								a(href="")=item
+			.pool__img
+				img(src=pool.img alt="")

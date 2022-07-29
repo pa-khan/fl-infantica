@@ -1,0 +1,59 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Residential Proxies - Infatica"
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	-
+		intro = {
+			icon: {
+				el: 'uploads/intro-home.svg'
+			},
+			desc: 'Residential Proxy Network',
+			title: 'Residential Proxies',
+			text: 'Data is key in all business areas – and a residential proxy network can provide secure and anonymous access to the data of any major platform. If you’re looking to buy residential IP addresses that are optimized for reliability, high performance, and maximum uptime, contact Infatica today!',
+			btns: [
+				{
+					cls: '--violet --lg',
+					title: 'Free Trial'
+				},
+				{
+					cls: '--b-white --lg',
+					title: 'Contact Sales'
+				},
+			]
+		}
+	include ../../../blocks/intro/intro
+	+style('intro', 'blocks')
+
+	include ../../../blocks/desc/desc
+	+style('desc', 'blocks')
+
+	include ../../../blocks/why/why
+	+style('why', 'blocks')
+
+	include ../../../blocks/api/api
+	+style('api', 'blocks')
+
+	include ../../../blocks/ips/ips
+	+style('ips', 'blocks')
+
+	include ../../../blocks/how/how
+	+style('how', 'blocks')
+
+	include ../../../blocks/reviews/reviews
+	+style('reviews', 'blocks')
+	+script('reviews', 'blocks')
+
+	- pricePlanText = 'We’re offering a set of pricing plans with varying parameters like IP address count and channel bandwidth – or use our flexible pricing option to fine-tune the parameters yourself. Choose the plan that fits your project’s needs best:'
+	include ../../../blocks/price-plan/price-plan
+	+style('price-plan', 'blocks')
+
+	include ../../../blocks/trial/trial
+	+style('trial', 'blocks')
+
+	include ../../../blocks/questions/questions
+	+style('questions', 'blocks')

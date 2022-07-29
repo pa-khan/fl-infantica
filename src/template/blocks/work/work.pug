@@ -1,0 +1,11 @@
+include ../../pug/vars
+
+if work
+	.work.case
+		.work__title=work.title
+		.work__wrap
+			.work__img
+				img(src=work.img alt="")
+			.work__content
+				.work__subtitle=work.subtitle
+				.work__text!=work.text

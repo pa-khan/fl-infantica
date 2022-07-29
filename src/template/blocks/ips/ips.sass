@@ -1,0 +1,54 @@
+.ips
+	position: relative
+	padding-bottom: 100px
+	&__img
+		position: absolute
+		max-width: 320px
+		&:nth-of-type(1)
+			top: 555px
+			right: calc(50% - var(--container-width) / 2 - 300px)
+		&:nth-of-type(2)
+			top: 915px
+			left: calc(50% - var(--container-width) / 2 - 330px)
+	&__town
+		display: flex
+		justify-content: center
+	&__title
+		text-align: center
+		margin-bottom: 20px
+	&__text
+		text-align: center
+		max-width: 800px
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 40px
+	&__wrap
+		padding: 60px 58px
+		background: #F6F7F8
+		border: 3px solid #000000
+		box-shadow: 12px 12px 0px #000000
+		border-radius: 6px
+	&__list
+		margin: 0 -10px -40px
+	&__item
+		display: flex
+		align-items: center
+		width: calc(100% / 4 - 20px)
+		margin: 0 10px 40px
+		&-flag
+			width: 68px
+			min-width: 68px
+			height: 48px
+		&-text
+			width: calc(100% - 68px)
+			padding-left: 24px
+		&-desc
+			font-weight: 500
+			font-size: 16px
+			line-height: 16px
+			color: #7D7D82
+			margin-bottom: 8px
+		&-title
+			font-weight: 700
+			font-size: 18px
+			line-height: 18px

@@ -1,16 +1,20 @@
 .case {
-  position: relative;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-.case .case {
-  padding-left: 0;
-  padding-right: 0;
+  padding-right: calc(50% - var(--container-width) / 2);
+  padding-left: calc(50% - var(--container-width) / 2);
 }
 
+@media (max-width: 1440px) {
+  .case {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .case {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -23,17 +27,4 @@
 
 .grid {
   display: grid;
-}
-
-.left {
-  margin-right: auto;
-}
-
-.mid {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.right {
-  margin-left: auto;
 }

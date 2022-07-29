@@ -1,0 +1,43 @@
+.how
+	z-index: 1
+	position: relative
+	padding-top: 100px
+	padding-bottom: 100px
+	background: #FFFFFF
+	&__cloud
+		position: absolute
+		&:nth-of-type(1)
+			top: -140px
+			right: calc(50% - var(--container-width) / 2 - 280px)
+		&:nth-of-type(2)
+			top: 395px
+			left: calc(50% - var(--container-width) / 2 - 280px)
+		&:nth-of-type(3)
+			top: 867px
+			right: calc(50% - var(--container-width) / 2 - 280px)
+		&:nth-of-type(4)
+			top: 1161px
+			left: calc(50% - var(--container-width) / 2 - 280px)
+	&__title
+		margin-bottom: 20px
+	&__text
+		max-width: 800px
+		margin-bottom: 30px
+	&__wrap
+		padding: 60px
+		background: #F1FAFE
+		border: 3px solid #000000
+		box-shadow: 12px 12px 0px #000000
+		border-radius: 6px
+	&__list
+		margin: 0 -20px -40px
+	&__item
+		width: calc(100% / 2 - 40px)
+		margin: 0 20px 40px
+		&-icon
+			display: inline-flex
+			border-radius: 50%
+			border: 20px solid #CFEAE7
+			margin-bottom: 24px
+		&-title
+			margin-bottom: 8px
