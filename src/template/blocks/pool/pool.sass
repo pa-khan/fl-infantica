@@ -12,11 +12,14 @@
 	&__text
 		margin-bottom: 30px
 	&__links
-		max-width: 290px
+		display: flex
 		ul
 			margin-bottom: -3px
+			flex-direction: column
+			margin-right: 32px
+			&:last-child
+				margin-right: 0
 		li
-			width: 50%
 			margin-bottom: 3px
 		a
 			font-weight: 500

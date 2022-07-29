@@ -15,13 +15,17 @@
   margin-bottom: 30px;
 }
 .pool__links {
-  max-width: 290px;
+  display: flex;
 }
 .pool__links ul {
   margin-bottom: -3px;
+  flex-direction: column;
+  margin-right: 32px;
+}
+.pool__links ul:last-child {
+  margin-right: 0;
 }
 .pool__links li {
-  width: 50%;
   margin-bottom: 3px;
 }
 .pool__links a {

@@ -426,10 +426,14 @@
 }
 
 .header__menu-country-list {
-  display: grid;
+  display: none;
   grid-auto-flow: row;
   grid-row-gap: 8px;
   margin-top: 8px;
+}
+
+.header__menu-location.--open .header__menu-country-list {
+  display: grid;
 }
 
 .header__menu-country-item {
