@@ -131,3 +131,31 @@
   padding-left: 58px;
   padding-right: 58px;
 }
+
+@media (max-width: 1024px) {
+  .api {
+    padding-top: 78px;
+    border-bottom: 1px solid #DDDDE8;
+  }
+  .api__wrap {
+    box-shadow: 14px 12px 0px #000000;
+  }
+  .api__body {
+    padding: 100px 58px;
+  }
+  .api__title {
+    max-width: 450px;
+  }
+  .api__text {
+    margin-bottom: 50px;
+  }
+  .api__list {
+    max-width: 392px;
+  }
+  .api__item {
+    margin-bottom: 11px;
+  }
+  .api__btn.--lg {
+    height: 75px;
+  }
+}

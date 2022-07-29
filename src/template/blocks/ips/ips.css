@@ -29,6 +29,9 @@
   margin-right: auto;
   margin-bottom: 40px;
 }
+.ips__text p {
+  line-height: 27px;
+}
 .ips__wrap {
   padding: 60px 58px;
   background: #F6F7F8;
@@ -65,4 +68,21 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+}
+
+@media (max-width: 1024px) {
+  .ips {
+    padding-top: 46px;
+    padding-bottom: 80px;
+  }
+  .ips__town {
+    max-width: 460px;
+    margin: 0 auto -33px;
+  }
+  .ips__wrap {
+    padding: 56px 10px 56px 98px;
+  }
+  .ips__item {
+    width: calc(50% - 20px);
+  }
 }
