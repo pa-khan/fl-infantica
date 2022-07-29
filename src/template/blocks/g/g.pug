@@ -51,7 +51,7 @@ include ../../pug/vars
 				</defs>
 			</svg>
 		else if  gIcon == 2
-			<svg width="322" height="259" viewBox="0 0 322 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg class="g__icon-user" width="322" height="259" viewBox="0 0 322 259" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M149.086 239.135C209.73 228.456 250.224 170.701 239.531 110.135C228.837 49.57 171.007 9.12933 110.363 19.8086C49.7185 30.488 9.2252 88.2432 19.9184 148.809C30.6116 209.374 88.442 249.815 149.086 239.135Z" fill="url(#paint0_linear_3365_17722)"/>
 				<mask id="mask0_3365_17722" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="18" y="18" width="224" height="223">
 				<path d="M149.086 239.135C209.73 228.456 250.224 170.701 239.531 110.135C228.837 49.57 171.007 9.12933 110.363 19.8086C49.7185 30.488 9.2252 88.2432 19.9184 148.809C30.6116 209.374 88.442 249.815 149.086 239.135Z" fill="#FDE5D8"/>
@@ -100,9 +100,10 @@ include ../../pug/vars
 			</svg>
 
 	.g__title.h2= gTitle
-	.g__text= gText
+	if gText
+		.g__text.t2= gText
 	if gList
-		.g__list.row
+		.g__list.row(class=gListClass)
 			each item in gList
 				.g__item
 					.g__item-icon

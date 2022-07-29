@@ -3,7 +3,7 @@ include ../../pug/vars
 <section class="price-plan case">
 	h2(class="price-plan__headline")= pricePlanTitle ? pricePlanTitle : 'Pricing'
 	if pricePlanText
-		.price-plan__text.t2= pricePlanText
+		.price-plan__text.t2!= pricePlanText
 	<ul class="price-plan__list">
 		<li class="price-plan__item">
 			<h3 class="price-plan__label">Start Plan</h3>

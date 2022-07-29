@@ -20,6 +20,13 @@
 .btn.--violet:hover {
   background: var(--color-primary-blue);
 }
+.btn.--green {
+  color: #fff;
+  background: var(--color-green03);
+}
+.btn.--green:hover {
+  background: var(--color-primary-blue);
+}
 .btn.--bg-white {
   color: var(--color-black04);
   background: #fff;

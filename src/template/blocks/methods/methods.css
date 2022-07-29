@@ -1,34 +1,76 @@
-:root {
-  /* Color */
-  --color-white: #ffffff;
-  --color-dark: #000000;
-  --color-primary: #8D21EF;
-  --color-primary-blue: #434396;
-  --color-green03: #34CCA9;
-  --color-black04: #1C1C20;
-  --color-gray05: #7D7D82;
-  --color-silver06: #DDDDE8;
-  --color-hover: #3d209f;
-  --color-hover-green: #17aa8c;
-  --color-red: #CF2F2F;
-  --color-secondary: #218AEF;
-  --color-neutral-100: #05172E;
-  --color-gray50: #F2F2F2;
-  --color-gray100: #E5E5E5;
-  --color-gray200: #CCCCCC;
-  --color-gray400: #999999;
-  --color-gray500: #808080;
-  /* Font */
-  --font-Metropolis: "Metropolis", sans-serif;
-  /* Container */
-  --container-width: 1170px;
-  /* Others */
-  --modal-height: 90vh;
-  --main-header-height: 79px;
-  --border-rd-small: 4px;
-  --border-rd-medium: 8px;
-  --border-rd-large: 16px;
-  /* Z-index variables */
-  --zIndex-overlay: 50;
-  --zIndex-modal: 125;
+.methods {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #F6F7F8;
+}
+.methods__inner {
+  margin-left: -60px;
+  margin-right: -60px;
+}
+.methods__title {
+  margin-bottom: 30px;
+}
+.methods__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 12px 12px 0px #000000;
+  border-radius: 6px;
+  transform: rotate(-1deg);
+  padding: 78px 60px;
+}
+.methods__left {
+  display: flex;
+  align-items: center;
+  max-width: 530px;
+}
+.methods__icon {
+  width: 120px;
+  height: 120px;
+}
+.methods__content {
+  width: calc(100% - 120px);
+  padding-left: 16px;
+}
+.methods__subtitle {
+  color: var(--color-primary-blue);
+  margin-bottom: 4px;
+}
+.methods__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+.methods__right {
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+}
+.methods__list {
+  margin: 0 -10px -20px;
+}
+.methods__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(16.6666666667% - 20px);
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 6px;
+  margin: 0 10px 20px;
+}
+.methods__item.--bg-blue {
+  background: #1F72CD;
+  border-color: #D9D9D9;
+}
+.methods__desc {
+  max-width: 395px;
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-gray05);
 }

@@ -8,7 +8,7 @@ include ../../pug/vars
 					img(src=intro.icon.el)
 			.intro__desc.h4= intro.desc
 			.intro__title.h1= intro.title
-			.intro__text.t1= intro.text
+			.intro__text.t1!= intro.text
 			if intro.btns
 				.intro__btns
 					each btn in intro.btns
