@@ -4,95 +4,20 @@ include ../../pug/vars
 	<div class="questions__wrap">
 		<h2 class="questions__headline">Frequently Asked Questions</h2>
 
-		<ul class="questions__list accordion" data-multiview='true'>
-			<li class="questions__item accordion__item tog">
-				<button class="questions__button accordion__head tog__head">
-					<span>How much does a proxy cost?</span>
-					<svg aria-hidden="true" class="questions__icon accordion__arrow-icon">
-						<use xlink:href="uploads/sprite.svg#arrow-right"></use>
-					</svg>
-				</button>
+		if questions
+			<ul class="questions__list accordion" data-multiview='true'>
+				each item in questions
+					<li class="questions__item accordion__item tog">
+						<button class="questions__button accordion__head tog__head">
+							span=item[0]
+							<svg aria-hidden="true" class="questions__icon accordion__arrow-icon">
+								<use xlink:href="uploads/sprite.svg#arrow-right"></use>
+							</svg>
+						</button>
 
-				<p class="questions__description accordion__body tog__body">A Proxy or Proxy Server is an intermediary server, either software or hardware, that sits between an end user and a website or other service's server. Proxies are used for different reasons including efficiency, privacy, and security.</p>
-			</li>
-
-			<li class="questions__item accordion__item tog">
-				<button class="questions__button accordion__head tog__head">
-					<span>Can you buy proxies?</span>
-					<svg aria-hidden="true" class="questions__icon accordion__arrow-icon">
-						<use xlink:href="uploads/sprite.svg#arrow-right"></use>
-					</svg>
-				</button>
-
-				<p class="questions__description accordion__body tog__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, consequuntur corporis deleniti eligendi, est fuga fugit id nostrum nulla quia quisquam soluta veniam. Deserunt nobis odit quia recusandae ullam.</p>
-			</li>
-
-			<li class="questions__item accordion__item tog">
-				<button class="questions__button accordion__head tog__head">
-					<span>Why are proxies expensive?</span>
-					<svg aria-hidden="true" class="questions__icon accordion__arrow-icon">
-						<use xlink:href="uploads/sprite.svg#arrow-right"></use>
-					</svg>
-				</button>
-
-				<p class="questions__description accordion__body tog__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, consequuntur corporis deleniti eligendi, est fuga fugit id nostrum nulla quia quisquam soluta veniam. Deserunt nobis odit quia recusandae ullam.</p>
-			</li>
-
-			<li class="questions__item accordion__item tog">
-				<button class="questions__button accordion__head tog__head">
-					<span>How much are sneaker proxies?</span>
-					<svg aria-hidden="true" class="questions__icon accordion__arrow-icon">
-						<use xlink:href="uploads/sprite.svg#arrow-right"></use>
-					</svg>
-				</button>
-
-				<p class="questions__description accordion__body tog__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aliquam animi aperiam corporis eius ipsam molestias omnis pariatur reprehenderit veniam? Aspernatur illo magnam, maxime modi odio repellat totam ullam veritatis!</p>
-			</li>
-
-			<li class="questions__item accordion__item tog">
-				<button class="questions__button accordion__head tog__head">
-					<span>Does a proxy server cost money?</span>
-					<svg aria-hidden="true" class="questions__icon accordion__arrow-icon">
-						<use xlink:href="uploads/sprite.svg#arrow-right"></use>
-					</svg>
-				</button>
-
-				<p class="questions__description accordion__body tog__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque deleniti doloremque ea impedit, ipsum maxime non quae quaerat quas quod rerum sapiente totam unde ut vero! Deleniti, ratione?</p>
-			</li>
-
-			<li class="questions__item accordion__item tog">
-				<button class="questions__button accordion__head tog__head">
-					<span>Are free proxies worth it?</span>
-					<svg aria-hidden="true" class="questions__icon accordion__arrow-icon">
-						<use xlink:href="uploads/sprite.svg#arrow-right"></use>
-					</svg>
-				</button>
-
-				<p class="questions__description accordion__body tog__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsum laboriosam libero nobis pariatur. Atque doloribus fugit harum, necessitatibus nobis numquam reprehenderit. Corporis error excepturi fugit minus modi placeat voluptatum!</p>
-			</li>
-
-			<li class="questions__item accordion__item tog">
-				<button class="questions__button accordion__head tog__head">
-					<span>Can proxies be trusted?</span>
-					<svg aria-hidden="true" class="questions__icon accordion__arrow-icon">
-						<use xlink:href="uploads/sprite.svg#arrow-right"></use>
-					</svg>
-				</button>
-
-				<p class="questions__description accordion__body tog__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad hic minus nam natus nobis nulla perferendis possimus quae quam qui ratione rem voluptas, voluptatum. Alias laboriosam modi totam.</p>
-			</li>
-
-			<li class="questions__item accordion__item tog">
-				<button class="questions__button accordion__head tog__head">
-					<span>How much are sneaker bot proxies?</span>
-					<svg aria-hidden="true" class="questions__icon accordion__arrow-icon">
-						<use xlink:href="uploads/sprite.svg#arrow-right"></use>
-					</svg>
-				</button>
-
-				<p class="questions__description accordion__body tog__body">Proxies are servers or devices to which you can connect to mask your real IP address. When connected to a proxy, you reroute your traffic through it and pick up its IP. Therefore, when you reach the website you need, it won’t be able to see your real data. Instead, the destination server will see the IP of a proxy. Thus, you remain anonymous and safe.</p>
-			</li>
-		</ul>
+						.questions__description.accordion__body.tog__body!=item[1]
+					</li>
+			</ul>
 	</div>
 
 	<img src="uploads/homepage/map/map.webp" alt="" class="questions__map questions__map_top">
