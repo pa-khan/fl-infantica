@@ -86,3 +86,33 @@
     width: calc(50% - 20px);
   }
 }
+@media (max-width: 767px) {
+  .ips__wrap {
+    padding: 50px 15px;
+  }
+}
+@media (max-width: 580px) {
+  .ips {
+    padding-top: 8px;
+  }
+  .ips__town {
+    margin: 0 auto -69px;
+  }
+  .ips__title {
+    margin-bottom: 10px;
+  }
+  .ips__wrap {
+    padding: 56px 58px 52px;
+    box-shadow: 8px 8px 0px #000000;
+  }
+  .ips__list {
+    margin: 0;
+  }
+  .ips__item {
+    width: 100%;
+    margin: 0 0 40px;
+  }
+  .ips__item:last-of-type {
+    margin: 0;
+  }
+}

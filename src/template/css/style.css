@@ -477,6 +477,11 @@ img, svg, path, circle, rect, line {
     height: 63px;
   }
 }
+@media (max-width: 580px) {
+  .btn.--lg {
+    height: 60px;
+  }
+}
 .accordion {
   display: grid;
   grid-auto-flow: row;
@@ -550,6 +555,34 @@ img, svg, path, circle, rect, line {
   .h2 {
     font-size: 32px;
     line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .h4 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .t1 {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+@media (max-width: 580px) {
+  .h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .h4 {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 .overflow-disable {

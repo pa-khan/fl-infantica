@@ -132,3 +132,42 @@
 		&__btn
 			&.--lg
 				height: 75px
+
+@media (max-width: 767px)
+	.api
+		&__body
+			padding: 58px
+		&__icon
+			max-width: 250px
+			svg
+				width: 100%
+
+@media (max-width: 580px)
+	.api
+		border-top: none
+		&__wrap
+			box-shadow: 8px 6px 0px #000000
+		&__head
+			padding: 16px 12px
+		&__drop, &__url, &__tab
+			display: none
+		&__body
+			padding: 100px 20px
+		&__icon
+			max-width: 150px
+			height: 120px
+			svg
+				height: 100%
+		&__title
+			font-size: 24px
+			line-height: 30px
+		&__text
+			text-align: left
+		&__list
+			max-width: 220px
+			margin-left: 0
+		&__item
+			margin-bottom: 15px
+			align-items: flex-start
+			&-title
+				line-height: 27px
