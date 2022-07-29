@@ -14,6 +14,7 @@
   border-radius: 4px;
 }
 .btn.--violet {
+  color: #fff;
   background: var(--color-primary);
 }
 .btn.--violet:hover {
