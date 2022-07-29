@@ -54,3 +54,34 @@
 .work__text a:hover {
   border-color: var(--color-primary-blue);
 }
+
+@media (max-width: 1024px) {
+  .work {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .work__title {
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .work__wrap {
+    padding: 58px 20px;
+  }
+  .work__content {
+    padding-left: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .work__img {
+    width: 93px;
+    height: 93px;
+  }
+  .work__img:before {
+    width: 93px;
+    height: 93px;
+    border-width: 2px;
+  }
+  .work__content {
+    width: calc(100% - 93px);
+  }
+}

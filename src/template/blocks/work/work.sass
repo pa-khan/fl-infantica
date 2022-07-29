@@ -43,3 +43,27 @@
 			color: var(--color-primary-blue)
 			&:hover
 				border-color: var(--color-primary-blue)
+
+@media (max-width: 1024px)
+	.work
+		padding-top: 80px
+		padding-bottom: 80px
+		&__title
+			margin-bottom: 36px
+			text-align: center
+		&__wrap
+			padding: 58px 20px
+		&__content
+			padding-left: 26px
+
+@media (max-width: 767px)
+	.work
+		&__img
+			width: 93px
+			height: 93px
+			&:before
+				width: 93px
+				height: 93px
+				border-width: 2px
+		&__content
+			width: calc(100% - 93px)
