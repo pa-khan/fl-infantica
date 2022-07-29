@@ -166,6 +166,27 @@
   .ips {
     padding-top: 8px;
   }
+  .ips.--pt {
+    border-top: 1px solid #DDDDE8;
+  }
+  .ips.--map-md .ips__img:nth-of-type(1) {
+    top: 360px;
+    right: 0;
+    opacity: 40%;
+  }
+  .ips.--map-md .ips__img:nth-of-type(2) {
+    display: none;
+  }
+  .ips__icon {
+    width: 240px;
+    height: 240px;
+  }
+  .ips__icon svg {
+    width: 150px;
+  }
+  .ips__imgs {
+    display: block;
+  }
   .ips__town {
     margin: 0 auto -69px;
   }

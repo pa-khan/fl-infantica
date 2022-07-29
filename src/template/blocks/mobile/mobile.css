@@ -37,3 +37,16 @@
     max-width: 600px;
   }
 }
+@media (max-width: 580px) {
+  .mobile {
+    padding-top: 94px;
+  }
+  .mobile__icon {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 16px;
+  }
+  .mobile__icon svg {
+    width: 100px;
+  }
+}
