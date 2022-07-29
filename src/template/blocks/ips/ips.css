@@ -28,7 +28,7 @@
   right: calc(50% - var(--container-width) / 2 - 300px);
 }
 .ips__img:nth-of-type(2) {
-  top: 915px;
+  top: 765px;
   left: calc(50% - var(--container-width) / 2 - 330px);
 }
 .ips__town, .ips__icon {

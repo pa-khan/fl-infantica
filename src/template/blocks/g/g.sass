@@ -35,6 +35,8 @@
 		align-items: center
 		justify-content: center
 		margin-bottom: 30px
+		&-user
+			margin-left: 60px
 	&__title
 		text-align: center
 		margin-bottom: 30px
@@ -50,6 +52,10 @@
 		gap: 60px 18px
 		grid-template-columns: repeat(4, 1fr)
 		padding: 60px
+		&.--w5
+			grid-template-columns: repeat(5, 1fr)
+			padding-left: 0
+			padding-right: 0
 
 	&__item
 		display: flex
@@ -72,3 +78,4 @@
 			font-weight: 600
 			font-size: 18px
 			line-height: 26px
+			text-align: center

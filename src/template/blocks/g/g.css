@@ -45,6 +45,9 @@
   justify-content: center;
   margin-bottom: 30px;
 }
+.g__icon-user {
+  margin-left: 60px;
+}
 .g__title {
   text-align: center;
   margin-bottom: 30px;
@@ -60,6 +63,11 @@
   gap: 60px 18px;
   grid-template-columns: repeat(4, 1fr);
   padding: 60px;
+}
+.g__list.--w5 {
+  grid-template-columns: repeat(5, 1fr);
+  padding-left: 0;
+  padding-right: 0;
 }
 .g__item {
   display: flex;
@@ -84,4 +92,5 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
 }
