@@ -60,3 +60,15 @@
   padding-left: 56px;
   padding-right: 56px;
 }
+
+@media (max-width: 1280px) {
+  .real__imgs-wrap {
+    padding-left: 100px;
+  }
+  .real__scan {
+    left: -20px;
+  }
+  .real__content {
+    max-width: 490px;
+  }
+}

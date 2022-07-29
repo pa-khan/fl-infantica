@@ -77,6 +77,20 @@
   font-size: 14px;
   color: #F6F7F8;
   width: 100%;
+  color: #DDDDE8;
+}
+.questions__description p {
+  margin-bottom: 15px;
+}
+.questions__description p:last-child {
+  margin-bottom: 0;
+}
+.questions__description a {
+  color: var(--color-green03);
+  border-color: var(--color-green03);
+}
+.questions__description a:hover {
+  border-color: transparent;
 }
 
 .questions__map {
