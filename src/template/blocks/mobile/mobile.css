@@ -23,3 +23,30 @@
   max-width: 680px;
   text-align: center;
 }
+
+@media (max-width: 1024px) {
+  .mobile {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+  .mobile__icon {
+    width: 290px;
+    height: 290px;
+  }
+  .mobile__text {
+    max-width: 600px;
+  }
+}
+@media (max-width: 580px) {
+  .mobile {
+    padding-top: 94px;
+  }
+  .mobile__icon {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 16px;
+  }
+  .mobile__icon svg {
+    width: 100px;
+  }
+}

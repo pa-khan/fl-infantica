@@ -88,3 +88,12 @@
   margin-top: 50px;
   min-width: 300px;
 }
+
+@media (max-width: 1280px) {
+  .vs__inner {
+    padding: 143px 80px 100px;
+  }
+  .vs__item {
+    width: 330px;
+  }
+}

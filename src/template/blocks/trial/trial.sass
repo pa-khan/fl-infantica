@@ -60,3 +60,44 @@
 		margin-top: 40px
 		padding-left: 56px
 		padding-right: 56px
+
+@media (max-width: 1024px)
+	.trial
+		padding-top: 76px
+		&__text
+			max-width: 640px
+			margin-bottom: 40px
+		&__list
+			flex-direction: column
+			align-items: center
+		&__item
+			margin-bottom: 99px
+			&:after
+				z-index: 1
+				width: 6px
+				height: 63px
+				top: 134px
+				right: auto
+				left: 50%
+				transform: translateX(-50%)
+				background: url('../../../uploads/divider.svg') no-repeat
+			&:last-of-type
+				margin-bottom: 0
+			&-count
+				margin: 0 auto 20px
+			&-title
+				font-size: 12px
+		&__btn
+			&.--lg
+				height: 75px
+
+@media (max-width: 580px)
+	.trial
+		padding-top: 40px
+		padding-bottom: 40px
+		border-top: none
+		&__title
+			font-size: 24px
+			line-height: 30px
+		&__btn
+			margin-top: 50px

@@ -266,6 +266,17 @@
     padding: 50px 30px;
   }
 }
+@media (max-width: 1024px) {
+  .price-plan__headline {
+    margin-bottom: 20px;
+  }
+  .price-plan__list {
+    grid-row-gap: 50px;
+  }
+  .price-plan__item {
+    padding: 19px 36px;
+  }
+}
 @media (max-width: 767px) {
   .price-plan {
     padding: 60px 14px;

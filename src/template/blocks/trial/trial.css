@@ -68,3 +68,56 @@
   padding-left: 56px;
   padding-right: 56px;
 }
+
+@media (max-width: 1024px) {
+  .trial {
+    padding-top: 76px;
+  }
+  .trial__text {
+    max-width: 640px;
+    margin-bottom: 40px;
+  }
+  .trial__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trial__item {
+    margin-bottom: 99px;
+  }
+  .trial__item:after {
+    z-index: 1;
+    width: 6px;
+    height: 63px;
+    top: 134px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../../uploads/divider.svg") no-repeat;
+  }
+  .trial__item:last-of-type {
+    margin-bottom: 0;
+  }
+  .trial__item-count {
+    margin: 0 auto 20px;
+  }
+  .trial__item-title {
+    font-size: 12px;
+  }
+  .trial__btn.--lg {
+    height: 75px;
+  }
+}
+@media (max-width: 580px) {
+  .trial {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: none;
+  }
+  .trial__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .trial__btn {
+    margin-top: 50px;
+  }
+}

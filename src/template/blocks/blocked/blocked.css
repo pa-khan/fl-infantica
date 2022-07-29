@@ -9,9 +9,9 @@
   align-items: center;
 }
 .blocked__img {
-  position: relative;
   width: 415px;
   height: 415px;
+  position: relative;
 }
 .blocked__img img {
   min-width: 460px;

@@ -33,3 +33,28 @@
 			font-weight: 600
 			font-size: 18px
 			line-height: 26px
+
+@media (max-width: 1024px)
+	.desc
+		padding-top: 80px
+		padding-bottom: 80px
+		&__title
+			text-align: center
+		&__text
+			text-align: center
+		&__list
+			margin: 0
+		&__item
+			width: 100%
+			max-width: 390px
+			margin: 0 auto 30px
+			padding: 41px 40px
+			box-shadow: 9px 8px 0px #000000
+			&:last-of-type
+				margin: 0 auto 0
+
+@media (max-width: 580px)
+	.desc
+		&__item
+			padding: 41px 10px
+			max-width: 330px

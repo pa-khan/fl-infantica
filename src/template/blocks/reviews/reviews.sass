@@ -228,11 +228,37 @@
 		max-width: 760px
 
 @media (max-width: 1024px)
+	.reviews
+		padding-bottom: 80px
+		clip-path: none
+		&__headline
+			margin-bottom: 20px
+		&__text
+			margin-left: auto
+			margin-right: auto
+			text-align: center
+		&__row
+			grid-row-gap: 25px
+		&__main
+			padding: 35px 40px
+			&-description
+				line-height: 26px
+				margin-bottom: 38px
+		&__more
+			right: -7px
+			font-size: 16px
+			position: relative
+		&__button
+			&-prev
+				left: -78px
+			&-next
+				right: -78px
+
 	.reviews .reviews__row:first-child
 		max-width: 560px
 
 	.reviews__row + .reviews__row
-		max-width: 480px
+		max-width: 450px
 
 @media (max-width: 767px)
 	.reviews__main-description
@@ -245,7 +271,7 @@
 		clip-path: unset
 
 	.reviews__headline
-		font-size: 20px
+		font-size: 24px
 		font-weight: 600
 
 	.reviews__main

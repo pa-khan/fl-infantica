@@ -42,3 +42,38 @@
 			width: 100%
 			height: 100%
 			object-fit: cover
+
+@media (max-width: 1024px)
+	.intro
+		border-radius: 0px 0px 50px 0px
+		&__wrap
+			padding-top: 54px
+			padding-bottom: 50px
+		&__desc
+			margin-bottom: 10px
+		&__title
+			margin-bottom: 10px
+		&__btns
+			margin-top: 30px
+
+@media (max-width: 767px)
+	.intro
+		&__icon
+			width: 130px
+
+@media (max-width: 580px)
+	.intro
+		&__icon
+			width: 120px
+			margin-bottom: 26px
+		&__desc
+			margin-bottom: 8px
+		&__title
+			margin-bottom: 15px
+		&__btns
+			margin-top: 14px
+			flex-direction: column
+		&__btn
+			margin-bottom: 10px
+			&:last-of-type
+				margin-bottom: 0

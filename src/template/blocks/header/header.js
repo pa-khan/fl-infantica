@@ -26,4 +26,9 @@ document.addEventListener('click', (e) => {
     headerItemCurrent.classList.remove(classIsActive);
     headerItemCurrent = null;
   }
+
+  if (ham.classList.contains(classIsActive) && !e.target.closest('.header')) {
+    header.classList.remove(classIsActive);
+    ham.classList.remove(classIsActive);
+  }
 });
