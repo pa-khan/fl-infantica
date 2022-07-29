@@ -1,13 +1,32 @@
-@import ../../sass/vars
-
-// .pool
-
-@media screen and (max-width: 1220px)
-	// .pool
-		
-@media screen and (max-width: 992px)
-	// .pool
-		
-@media screen and (max-width: 767px)
-	// .pool
-		
+.pool
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		padding: 80px 47.5px
+	&__content
+		width: 100%
+		max-width: 555px
+	&__title
+		margin-bottom: 30px
+	&__text
+		margin-bottom: 30px
+	&__links
+		max-width: 290px
+		ul
+			margin-bottom: -3px
+		li
+			width: 50%
+			margin-bottom: 3px
+		a
+			font-weight: 500
+			font-size: 16px
+			line-height: 27px
+			color: var(--color-primary-blue)
+			border-color: var(--color-primary-blue)
+			&:hover
+				border-color: transparent
+	&__img
+		width: 320px
+		height: 320px
+		margin-left: auto

@@ -1,13 +1,76 @@
-@import ../../sass/vars
+.vs
+	position: relative
+	border-bottom: 1px solid #DDDDE8
+	&__inner
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 143px 137px 100px
+	&__cloud
+		position: absolute
+		&:nth-of-type(1)
+			max-width: 94px
+			top: 100px
+			left: calc(50% - var(--container-width) / 2 + 385px)
+		&:nth-of-type(2)
+			max-width: 52px
+			top: 245px
+			right: calc(50% - var(--container-width) / 2 + 380px)
+		&:nth-of-type(3)
+			top: 90px
+			left: calc(50% - var(--container-width) / 2 - 71px)
+		&:nth-of-type(4)
+			top: 336px
+			right: calc(50% - var(--container-width) / 2 - 150px)
+		&:nth-of-type(5)
+			top: 785px
+			left: calc(50% - var(--container-width) / 2 - 220px)
+		&:nth-of-type(6)
+			top: 1105px
+			right: calc(50% - var(--container-width) / 2 - 250px)
+		svg
+			max-width: 100%
+			max-height: 100%
 
-// .vs
+	&__icon
+		margin-bottom: 30px
 
-@media screen and (max-width: 1220px)
-	// .vs
-		
-@media screen and (max-width: 992px)
-	// .vs
-		
-@media screen and (max-width: 767px)
-	// .vs
-		
+	&__title
+		margin-bottom: 30px
+
+	&__text
+		text-align: center
+
+	&__list
+		margin: 75px -20px -40px
+		justify-content: center
+		width: 100%
+
+	&__item
+		width: 368px
+		background: #FFFFFF
+		border: 3px solid #000000
+		box-shadow: 6px 6px 0px #000000
+		border-radius: 8px
+		padding: 30px 40px
+		margin: 0 20px 40px
+		&-title
+			padding-bottom: 24px
+			border-bottom: 1px solid rgba(#DDDDE8, 0.6)
+			margin-bottom: 24px
+		&-el
+			display: flex
+			align-items: center
+			margin-bottom: 32px
+			&:last-child
+				margin-bottom: 0
+			span
+				width: calc(100% - 32px)
+				font-weight: 600
+				font-size: 18px
+				line-height: 26px
+				padding-left: 16px
+
+	&__btn
+		margin-top: 50px
+		min-width: 300px

@@ -71,3 +71,35 @@
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after
 	display: none
+
+.breadcrumbs
+	padding-top: 45px
+	padding-bottom: 45px
+	&__list
+		display: flex
+		flex-wrap: wrap
+	&__item
+		position: relative
+		font-size: 16px
+		line-height: 16px
+		font-weight: 500
+		margin-right: 32px
+		&:last-child
+			margin-right: 0
+			&::after
+				display: none
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			right: -18px
+			width: 6px
+			height: 9px
+			transform: translateY(-50%)
+			background: url('../../../uploads/chevron.svg') no-repeat center
+	&__text
+		color: #8F8F9F
+
+	&__link
+		&:hover
+			border-color: var(--color-black04)

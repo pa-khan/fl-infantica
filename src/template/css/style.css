@@ -606,3 +606,41 @@ img, svg, path, circle, rect, line {
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
   display: none;
 }
+
+.breadcrumbs {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.breadcrumbs__item {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-right: 32px;
+}
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+.breadcrumbs__item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  width: 6px;
+  height: 9px;
+  transform: translateY(-50%);
+  background: url("../../../uploads/chevron.svg") no-repeat center;
+}
+.breadcrumbs__text {
+  color: #8F8F9F;
+}
+.breadcrumbs__link:hover {
+  border-color: var(--color-black04);
+}
