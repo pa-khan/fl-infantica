@@ -14,7 +14,7 @@
 			right: calc(50% - var(--container-width) / 2 + 385px)
 		&:nth-of-type(3)
 			top: 50px
-			keft: calc(50% - var(--container-width) / 2 - 71px)
+			left: calc(50% - var(--container-width) / 2 - 71px)
 		&:nth-of-type(4)
 			top: 187px
 			right: calc(50% - var(--container-width) / 2 - 150px)
@@ -65,3 +65,23 @@
 		&__item
 			width: calc( 100% / 3 - 18px )
 			margin: 0 8.5px 48px
+
+@media (max-width: 767px)
+	.cases
+		padding-top: 60px
+		padding-bottom: 60px
+		&__cloud
+			&:nth-of-type(2)
+				top: 190px
+		&__icon
+			max-width: 150px
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 40px
+		&__list
+			padding-top: 0
+			padding-bottom: 0
+		&__item
+			width: calc( 100% / 2 - 18px )
+			&-icon
+				margin-bottom: 30px

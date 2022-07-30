@@ -48,6 +48,8 @@
 		margin-left: auto
 	&__title
 		margin-bottom: 20px
+		&.--hidden
+			display: none
 	&__text
 		margin-bottom: 30px
 	&__btn
@@ -77,17 +79,25 @@
 			margin-right: auto
 		&__title
 			max-width: 500px
-			margin: 0 auto 410px
+			margin: 0 auto 30px
 			text-align: center
+			display: none
+			&.--hidden
+				display: block
 		&__text
 			text-align: center
 		&__imgs-wrap
-			order: 2
-			top: 120px
-			padding: 0
+			width: 100%
+			max-width: 300px
+			padding-left: 0
+			padding-top: 0
+			// order: 2
+			// top: 120px
+			// padding: 0
 			display: flex
 			justify-content: center
-			position: absolute
+			// position: absolute
+			margin-bottom: 30px
 		&__scan
 			display: none
 		&__profile
@@ -106,11 +116,10 @@
 		&__title
 			font-size: 24px
 			line-height: 30px
-			margin: 0 auto 266px
 		&__text
 			text-align: justify
 		&__imgs-wrap
-			top: 88px
+			// top: 88px
 		&__profile
 			width: 189px
 			padding: 20px 20px 44px

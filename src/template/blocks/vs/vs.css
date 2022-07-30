@@ -45,6 +45,7 @@
   margin-bottom: 30px;
 }
 .vs__title {
+  text-align: center;
   margin-bottom: 30px;
 }
 .vs__text {
@@ -132,5 +133,20 @@
   }
   .vs__btn.--lg {
     height: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .vs__cloud:nth-of-type(1) {
+    top: 60px;
+  }
+  .vs__cloud:nth-of-type(2) {
+    top: 200px;
+  }
+  .vs__inner {
+    padding-top: 95px;
+    padding-bottom: 80px;
+  }
+  .vs__list {
+    margin-top: 45px;
   }
 }

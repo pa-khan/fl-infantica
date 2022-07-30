@@ -58,6 +58,9 @@
 .real__title {
   margin-bottom: 20px;
 }
+.real__title.--hidden {
+  display: none;
+}
 .real__text {
   margin-bottom: 30px;
 }
@@ -94,19 +97,24 @@
   }
   .real__title {
     max-width: 500px;
-    margin: 0 auto 410px;
+    margin: 0 auto 30px;
     text-align: center;
+    display: none;
+  }
+  .real__title.--hidden {
+    display: block;
   }
   .real__text {
     text-align: center;
   }
   .real__imgs-wrap {
-    order: 2;
-    top: 120px;
-    padding: 0;
+    width: 100%;
+    max-width: 300px;
+    padding-left: 0;
+    padding-top: 0;
     display: flex;
     justify-content: center;
-    position: absolute;
+    margin-bottom: 30px;
   }
   .real__scan {
     display: none;
@@ -131,13 +139,9 @@
   .real__title {
     font-size: 24px;
     line-height: 30px;
-    margin: 0 auto 266px;
   }
   .real__text {
     text-align: justify;
-  }
-  .real__imgs-wrap {
-    top: 88px;
   }
   .real__profile {
     width: 189px;
