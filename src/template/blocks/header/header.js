@@ -16,6 +16,11 @@ headerItems.forEach((headerItem) => {
       headerItemCurrent.classList.remove(classIsActive);
     }
 
+    if (headerItemCurrent == headerItem) {
+      headerItemCurrent = null;
+      return false;
+    }
+
     headerItemCurrent = headerItem;
     headerItemCurrent.classList.add(classIsActive);
   });
