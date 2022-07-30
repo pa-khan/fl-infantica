@@ -74,6 +74,9 @@
   .intro__icon {
     width: 130px;
   }
+  .intro__text br {
+    display: none;
+  }
 }
 @media (max-width: 580px) {
   .intro__icon {

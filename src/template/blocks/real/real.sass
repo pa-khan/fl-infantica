@@ -62,3 +62,64 @@
 			left: -20px
 		&__content
 			max-width: 490px
+
+@media (max-width: 1024px)
+	.real
+		padding-top: 108px
+		padding-bottom: 80px
+		border-bottom: 1px solid #DDDDE8
+		&__wrap
+			flex-direction: column
+			position: relative
+		&__content
+			order: 1
+			max-width: 555px
+			margin-right: auto
+		&__title
+			max-width: 500px
+			margin: 0 auto 410px
+			text-align: center
+		&__text
+			text-align: center
+		&__imgs-wrap
+			order: 2
+			top: 120px
+			padding: 0
+			display: flex
+			justify-content: center
+			position: absolute
+		&__scan
+			display: none
+		&__profile
+			box-shadow: 8px 8px 0px #000000
+		&__btn
+			margin: 0 auto
+			&.--lg
+				height: 75px
+
+@media (max-width: 580px)
+	.real
+		padding-top: 40px
+		padding-bottom: 60px
+		background: transparent
+		border-bottom: none
+		&__title
+			font-size: 24px
+			line-height: 30px
+			margin: 0 auto 266px
+		&__text
+			text-align: justify
+		&__imgs-wrap
+			top: 88px
+		&__profile
+			width: 189px
+			padding: 20px 20px 44px
+			box-shadow: none
+			&-img
+				height: 112px
+				border-radius: 4px
+				margin-bottom: 7px
+				img
+					height: 100%
+			&-ip
+				font-size: 12px
