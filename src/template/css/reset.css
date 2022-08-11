@@ -1,7 +1,7 @@
 :root {
   /* Color */
   --color-white: #ffffff;
-  --color-dark: #000000;
+  --color-dark: #1C1C20;
   --color-primary: #8D21EF;
   --color-primary-blue: #434396;
   --color-green03: #34CCA9;
@@ -52,6 +52,7 @@ body {
   font-family: var(--font-Metropolis);
   font-weight: 400;
   overflow-y: scroll;
+  color: var(--color-dark);
 }
 
 ul, ol {

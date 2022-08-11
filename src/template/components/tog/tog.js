@@ -1,47 +1,64 @@
 class Tog {
-  constructor(element) {
+  constructor(element, options = {
+    classHide: '--hide',
+    classShow: '--show'
+  }) {
     this.element = element;
-
-    this.classOpen = '--open';
-    this.speed = 2000;
-    this.isOpen = false;
-    this.interval = null;
-
+    this.options = options;
     this.head = this.element.querySelector('.tog__head');
     this.body = this.element.querySelector('.tog__body');
+    this.isOpen = false;
+    if (this.head && this.body) {
+      this.head.addEventListener('click', () => {
+        this.isOpen = !this.isOpen;
+        this.element.classList.toggle('--open');
 
-    // this.body.style.transition = this.speed + 'ms';
+        if (this.isOpen) {
+          this.showBlock();
+        } else {
+          this.hideBlock();
+        }
+      });
+    }
+  }
 
-    // if (this.element.classList.contains(this.classOpen)) {
-    //   this.body.style.display = 'block';
-    // } else {
-    //   this.body.style.display = 'none';
-    //   this.body.style.maxHeight = 0 + 'px';
-    // }
-
-    this.head.addEventListener('click', () => {
-
-      this.element.classList.toggle(this.classOpen);
-      this.isOpen = !this.isOpen;
-
-      // if (this.isOpen) {
-      //   this.body.style.display = 'block';
-      //   this.body.style.maxHeight = this.body.scrollHeight + 'px';
-
-      //   setTimeout(() => {
-      //     this.body.removeAttribute('style');
-      //     this.body.style.transition = this.speed + 'ms';
-      //   }, this.speed);
-      // } else {
-      //   this.body.style.maxHeight = 0 + 'px';
-      //   setTimeout(() => {
-      //     this.body.style.display = 'none';
-      //     this.body.style.transition = this.speed + 'ms';
-      //   }, this.speed);
-      // }
+  showBlock() {
+    this.body.style.height = 0 + 'px';
 
 
-      // console.log(this.body);
-    });
+    let percentHeight = this.body.scrollHeight / 20;
+    let blockHeight = 0;
+
+    let interval = setInterval(() => {
+      blockHeight += percentHeight;
+      this.body.style.height = blockHeight + 'px';
+
+      if (blockHeight >= this.body.scrollHeight) {
+        this.body.style.height = percentHeight + 'px';
+        this.element.classList.add(this.options.classShow);
+        this.body.removeAttribute('style');
+        this.element.classList.remove(this.options.classHide);
+        clearInterval(interval);
+      }
+    }, 10);
+  }
+
+  hideBlock() {
+
+    let percentHeight = this.body.offsetHeight / 20;
+    let blockHeight = this.body.offsetHeight;
+
+    let interval = setInterval(() => {
+      blockHeight -= percentHeight;
+      this.body.style.height = blockHeight + 'px';
+
+      if (blockHeight <= 0) {
+        this.body.style.height = 0 + 'px';
+        this.element.classList.add(this.options.classHide);
+        this.body.removeAttribute('style');
+        this.element.classList.remove(this.options.classShow);
+        clearInterval(interval);
+      }
+    }, 10);
   }
 }

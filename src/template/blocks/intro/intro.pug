@@ -1,6 +1,6 @@
 include ../../pug/vars
 
-.intro.case
+.intro.case(style="background-image: url('uploads/intro-bg.png')")
 	.intro__wrap
 		if intro
 			if intro.icon
@@ -14,4 +14,4 @@ include ../../pug/vars
 					each btn in intro.btns
 						.intro__btn.btn(class=btn.cls)=btn.title
 	.intro__bg
-		img(src="uploads/intro-bg.png" alt="")
+		

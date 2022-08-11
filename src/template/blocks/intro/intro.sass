@@ -5,6 +5,7 @@
 	border-bottom: 10px solid #1C1C20
 	border-radius: 0px 0px 100px 0px
 	overflow: hidden
+	background-size: cover
 	&__wrap
 		display: flex
 		flex-direction: column
@@ -15,6 +16,7 @@
 		max-width: 985px
 		margin: 0 auto
 	&__icon
+		width: 160px
 		margin-bottom: 24px
 	&__desc
 		text-transform: capitalize
@@ -56,6 +58,11 @@
 		&__btns
 			margin-top: 30px
 
+@media (max-width: 960px)
+	.intro
+		&__text
+			br
+				display: none
 @media (max-width: 767px)
 	.intro
 		&__icon

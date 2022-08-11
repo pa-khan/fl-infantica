@@ -1,4 +1,6 @@
 .price-plan {
+  display: flex;
+  flex-direction: column;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -10,6 +12,23 @@
   font-size: 40px;
   font-weight: 700;
   color: var(--color-black04);
+}
+
+.price-plan__btn-main {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+  padding: 24px;
+  background: #CA2F2F;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+.price-plan__btn-main:hover {
+  background-color: #000000;
 }
 
 .price-plan__text {
@@ -280,6 +299,13 @@
 @media (max-width: 767px) {
   .price-plan {
     padding: 60px 14px;
+  }
+  .price-plan__btn-main {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 18px 35px;
+    margin-bottom: 30px;
+    text-align: center;
   }
   .price-plan__list {
     grid-template-columns: repeat(2, 1fr);

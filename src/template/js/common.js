@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 
-	let togs = document.querySelectorAll('.tog');
-	if (togs.length > 0) {
-		togs.forEach((tog) => {
+	let toggs = document.querySelectorAll('.tog');
+	if (toggs) {
+		toggs.forEach((tog) => {
 			new Tog(tog);
 		});
 	}
